@@ -108,6 +108,12 @@
             </a>
         {{ end }}
 
+        {{ if .Site.Params.mastodon }}
+            <a rel="me" href="{{ .Site.Params.mastodon }}">
+                <img class="icon" src="{{ .Site.BaseURL }}img/mastodon.svg" alt="mastodon" />
+            </a>
+        {{ end }}
+
         </div>
     </div>
 </div>
